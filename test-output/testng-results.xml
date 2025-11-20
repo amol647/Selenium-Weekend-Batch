@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Database connection]]>
+    </line>
+    <line>
+      <![CDATA[Precondition if Any]]>
+    </line>
+    <line>
+      <![CDATA[Launch Browser]]>
+    </line>
+    <line>
+      <![CDATA[Login]]>
+    </line>
+    <line>
+      <![CDATA[Logout]]>
+    </line>
+    <line>
+      <![CDATA[Close the browser]]>
+    </line>
+    <line>
+      <![CDATA[Post condition]]>
+    </line>
+    <line>
+      <![CDATA[Database Disconnect]]>
+    </line>
+    <line>
+      <![CDATA[Report Backed Up]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-11-20T18:27:35 IST" name="Default suite" finished-at="2025-11-20T18:27:59 IST" duration-ms="24444">
+    <groups>
+    </groups>
+    <test started-at="2025-11-20T18:27:35 IST" name="Default test" finished-at="2025-11-20T18:27:59 IST" duration-ms="24444">
+      <class name="TestScripts.ClickOnFBTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:TestScripts.ClickOnFBTest@1f2586d6]" started-at="2025-11-20T18:27:35 IST" name="configBS" finished-at="2025-11-20T18:27:35 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Database connection]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="BTconfig()[pri:0, instance:TestScripts.ClickOnFBTest@1f2586d6]" started-at="2025-11-20T18:27:35 IST" name="BTconfig" finished-at="2025-11-20T18:27:35 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Precondition if Any]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BTconfig -->
+        <test-method is-config="true" signature="BCconfig()[pri:0, instance:TestScripts.ClickOnFBTest@1f2586d6]" started-at="2025-11-20T18:27:35 IST" name="BCconfig" finished-at="2025-11-20T18:27:47 IST" duration-ms="11832" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Launch Browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BCconfig -->
+        <test-method is-config="true" signature="BMconfig()[pri:0, instance:TestScripts.ClickOnFBTest@1f2586d6]" started-at="2025-11-20T18:27:47 IST" name="BMconfig" finished-at="2025-11-20T18:27:48 IST" duration-ms="1568" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BMconfig -->
+        <test-method signature="FacebookTest()[pri:0, instance:TestScripts.ClickOnFBTest@1f2586d6]" started-at="2025-11-20T18:27:48 IST" name="FacebookTest" finished-at="2025-11-20T18:27:59 IST" duration-ms="10955" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email']"}
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [de4fec298d73a2bd754d5a6da097758e, findElement {value=email, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\AMOLSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53113}, goog:processID: 4988, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53113/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: de4fec298d73a2bd754d5a6da097758e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='email']"}
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [de4fec298d73a2bd754d5a6da097758e, findElement {value=email, using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\AMOLSH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53113}, goog:processID: 4988, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53113/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: de4fec298d73a2bd754d5a6da097758e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at TestScripts.ClickOnFBTest.FacebookTest(ClickOnFBTest.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FacebookTest -->
+        <test-method is-config="true" signature="AMconfig()[pri:0, instance:TestScripts.ClickOnFBTest@1f2586d6]" started-at="2025-11-20T18:27:59 IST" name="AMconfig" finished-at="2025-11-20T18:27:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logout]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AMconfig -->
+        <test-method is-config="true" signature="ACconfig()[pri:0, instance:TestScripts.ClickOnFBTest@1f2586d6]" started-at="2025-11-20T18:27:59 IST" name="ACconfig" finished-at="2025-11-20T18:27:59 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Close the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ACconfig -->
+        <test-method is-config="true" signature="ATconfig()[pri:0, instance:TestScripts.ClickOnFBTest@1f2586d6]" started-at="2025-11-20T18:27:59 IST" name="ATconfig" finished-at="2025-11-20T18:27:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Post condition]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ATconfig -->
+        <test-method is-config="true" signature="ASconfig()[pri:0, instance:TestScripts.ClickOnFBTest@1f2586d6]" started-at="2025-11-20T18:27:59 IST" name="ASconfig" finished-at="2025-11-20T18:27:59 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Database Disconnect]]>
+            </line>
+            <line>
+              <![CDATA[Report Backed Up]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ASconfig -->
+      </class> <!-- TestScripts.ClickOnFBTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
