@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestScripts.AddToCartTc">
+      <class name="TestScripts.AboutUsTest">
         <methods>
           <include name="ATconfig"/>
           <include name="BCconfig"/>
           <include name="BMconfig"/>
-          <include name="AddToCart1"/>
+          <include name="AboutUs"/>
           <include name="AMconfig"/>
           <include name="ASconfig"/>
           <include name="configBS"/>
           <include name="ACconfig"/>
           <include name="BTconfig"/>
         </methods>
-      </class> <!-- TestScripts.AddToCartTc -->
+      </class> <!-- TestScripts.AboutUsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
