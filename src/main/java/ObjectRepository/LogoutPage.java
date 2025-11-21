@@ -24,4 +24,10 @@ public class LogoutPage {
 	@FindBy(id="logout_sidebar_link")
 	WebElement logoutbutton;
 	
+	public void logout()
+	{
+		logoutPopup.click();
+		logoutbutton.click();
+	}
+	
 }
