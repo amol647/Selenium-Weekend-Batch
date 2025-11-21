@@ -27,5 +27,42 @@ public class CheckOutPage {
 	@FindBy(id="postal-code")
 	WebElement PostalZipCode;
 	
+	@FindBy(id="continue")
+	WebElement ContinutBtn;
+	
+	@FindBy(id="finish")
+	WebElement FinishBtn;
+	
+	@FindBy(id="back-to-products")
+	WebElement BackToHomeBtn;
+
+	public WebElement getBackToHomeBtn() {
+		return BackToHomeBtn;
+	}
+
+	public WebElement getContinutBtn() {
+		return ContinutBtn;
+	}
+
+	public WebElement getFinishBtn() {
+		return FinishBtn;
+	}
+
+	public WebElement getCheckOutBtn() {
+		return CheckOutBtn;
+	}
+
+	public WebElement getFirstName() {
+		return FirstName;
+	}
+
+	public WebElement getLastName() {
+		return LastName;
+	}
+
+	public WebElement getPostalZipCode() {
+		return PostalZipCode;
+	}
+	
 	
 }

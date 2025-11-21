@@ -24,9 +24,10 @@ public class LogoutPage {
 	@FindBy(id="logout_sidebar_link")
 	WebElement logoutbutton;
 	
-	public void logout()
+	public void logout() throws InterruptedException
 	{
 		logoutPopup.click();
+		Thread.sleep(2000);
 		logoutbutton.click();
 	}
 	

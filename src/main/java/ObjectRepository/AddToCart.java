@@ -28,6 +28,25 @@ WebDriver driver;
 	
 	@FindBy(xpath = "//div[@id='shopping_cart_container']")
 	WebElement ShoppingCartLogoButton;
+
+	public WebElement getSauceLabBackPack_AddToCart() {
+		return SauceLabBackPack_AddToCart;
+	}
+
+
+	public WebElement getSauceLabBikeLight_AddToCart() {
+		return SauceLabBikeLight_AddToCart;
+	}
+
+
+	public WebElement getSauceLabBoltTShirt_AddToCart() {
+		return SauceLabBoltTShirt_AddToCart;
+	}
+
+
+	public WebElement getShoppingCartLogoButton() {
+		return ShoppingCartLogoButton;
+	}
 	
 	
 }
