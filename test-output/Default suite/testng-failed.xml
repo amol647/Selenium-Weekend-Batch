@@ -3,11 +3,20 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="TestScripts.ClickOnFBTest">
+=======
+      <class name="TestScripts.AboutUsTest">
+>>>>>>> branch 'master' of https://github.com/amol647/Selenium-Weekend-Batch.git
         <methods>
           <include name="ATconfig"/>
           <include name="BMconfig"/>
+<<<<<<< HEAD
           <include name="BCconfig"/>
+=======
+          <include name="AboutUs"/>
+          <include name="AMconfig"/>
+>>>>>>> branch 'master' of https://github.com/amol647/Selenium-Weekend-Batch.git
           <include name="ASconfig"/>
           <include name="AMconfig"/>
           <include name="configBS"/>
@@ -15,7 +24,11 @@
           <include name="FacebookTest"/>
           <include name="BTconfig"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- TestScripts.ClickOnFBTest -->
+=======
+      </class> <!-- TestScripts.AboutUsTest -->
+>>>>>>> branch 'master' of https://github.com/amol647/Selenium-Weekend-Batch.git
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

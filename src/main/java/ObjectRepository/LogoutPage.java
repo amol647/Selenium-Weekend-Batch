@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import WebDriverUtility.ExplicitWait;
+
 public class LogoutPage {
 
 	WebDriver driver;
@@ -24,11 +26,20 @@ public class LogoutPage {
 	@FindBy(id="logout_sidebar_link")
 	WebElement logoutbutton;
 	
+	public WebElement getLogoutPopup() {
+		return logoutPopup;
+	}
+
+	public WebElement getLogoutbutton() {
+		return logoutbutton;
+	}
+
 	public void logout() throws InterruptedException
 	{
-		logoutPopup.click();
-		Thread.sleep(2000);
-		logoutbutton.click();
+		getLogoutPopup().click();
+		ExplicitWait wait = new ExplicitWait();
+		wait.Explicitwait(getLogoutbutton());
+		getLogoutbutton().click();
 	}
 	
 }

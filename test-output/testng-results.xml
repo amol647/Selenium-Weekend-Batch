@@ -26,39 +26,62 @@
       <![CDATA[Report Backed Up]]>
     </line>
   </reporter-output>
+<<<<<<< HEAD
   <suite started-at="2025-11-21T18:48:09 IST" name="Default suite" finished-at="2025-11-21T18:48:31 IST" duration-ms="22466">
+=======
+  <suite started-at="2025-11-21T20:28:41 IST" name="Default suite" finished-at="2025-11-21T20:29:01 IST" duration-ms="20006">
+>>>>>>> branch 'master' of https://github.com/amol647/Selenium-Weekend-Batch.git
     <groups>
     </groups>
+<<<<<<< HEAD
     <test started-at="2025-11-21T18:48:09 IST" name="Default test" finished-at="2025-11-21T18:48:31 IST" duration-ms="22466">
       <class name="TestScripts.ClickOnFBTest">
         <test-method is-config="true" signature="configBS()[pri:0, instance:TestScripts.ClickOnFBTest@3b0090a4]" started-at="2025-11-21T18:48:09 IST" name="configBS" finished-at="2025-11-21T18:48:09 IST" duration-ms="21" status="PASS">
+=======
+    <test started-at="2025-11-21T20:28:41 IST" name="Default test" finished-at="2025-11-21T20:29:01 IST" duration-ms="20006">
+      <class name="TestScripts.AboutUsTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:TestScripts.AboutUsTest@72035809]" started-at="2025-11-21T20:28:41 IST" name="configBS" finished-at="2025-11-21T20:28:41 IST" duration-ms="33" status="PASS">
+>>>>>>> branch 'master' of https://github.com/amol647/Selenium-Weekend-Batch.git
           <reporter-output>
             <line>
               <![CDATA[Database connection]]>
             </line>
           </reporter-output>
         </test-method> <!-- configBS -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="BTconfig()[pri:0, instance:TestScripts.ClickOnFBTest@3b0090a4]" started-at="2025-11-21T18:48:09 IST" name="BTconfig" finished-at="2025-11-21T18:48:09 IST" duration-ms="2" status="PASS">
+=======
+        <test-method is-config="true" signature="BTconfig()[pri:0, instance:TestScripts.AboutUsTest@72035809]" started-at="2025-11-21T20:28:41 IST" name="BTconfig" finished-at="2025-11-21T20:28:41 IST" duration-ms="2" status="PASS">
+>>>>>>> branch 'master' of https://github.com/amol647/Selenium-Weekend-Batch.git
           <reporter-output>
             <line>
               <![CDATA[Precondition if Any]]>
             </line>
           </reporter-output>
         </test-method> <!-- BTconfig -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="BCconfig()[pri:0, instance:TestScripts.ClickOnFBTest@3b0090a4]" started-at="2025-11-21T18:48:09 IST" name="BCconfig" finished-at="2025-11-21T18:48:20 IST" duration-ms="11226" status="PASS">
+=======
+        <test-method is-config="true" signature="BCconfig()[pri:0, instance:TestScripts.AboutUsTest@72035809]" started-at="2025-11-21T20:28:41 IST" name="BCconfig" finished-at="2025-11-21T20:28:51 IST" duration-ms="10073" status="PASS">
+>>>>>>> branch 'master' of https://github.com/amol647/Selenium-Weekend-Batch.git
           <reporter-output>
             <line>
               <![CDATA[Launch Browser]]>
             </line>
           </reporter-output>
         </test-method> <!-- BCconfig -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="BMconfig()[pri:0, instance:TestScripts.ClickOnFBTest@3b0090a4]" started-at="2025-11-21T18:48:20 IST" name="BMconfig" finished-at="2025-11-21T18:48:21 IST" duration-ms="573" status="PASS">
+=======
+        <test-method is-config="true" signature="BMconfig()[pri:0, instance:TestScripts.AboutUsTest@72035809]" started-at="2025-11-21T20:28:51 IST" name="BMconfig" finished-at="2025-11-21T20:28:53 IST" duration-ms="1955" status="PASS">
+>>>>>>> branch 'master' of https://github.com/amol647/Selenium-Weekend-Batch.git
           <reporter-output>
             <line>
               <![CDATA[Login]]>
             </line>
           </reporter-output>
         </test-method> <!-- BMconfig -->
+<<<<<<< HEAD
         <test-method signature="FacebookTest()[pri:0, instance:TestScripts.ClickOnFBTest@3b0090a4]" started-at="2025-11-21T18:48:21 IST" name="FacebookTest" finished-at="2025-11-21T18:48:31 IST" duration-ms="10526" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
@@ -126,8 +149,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        <test-method signature="AboutUs()[pri:0, instance:TestScripts.AboutUsTest@72035809]" started-at="2025-11-21T20:28:53 IST" name="AboutUs" finished-at="2025-11-21T20:28:59 IST" duration-ms="5999" status="PASS">
+>>>>>>> branch 'master' of https://github.com/amol647/Selenium-Weekend-Batch.git
           <reporter-output>
           </reporter-output>
+<<<<<<< HEAD
         </test-method> <!-- FacebookTest -->
         <test-method is-config="true" signature="AMconfig()[pri:0, instance:TestScripts.ClickOnFBTest@3b0090a4]" started-at="2025-11-21T18:48:31 IST" name="AMconfig" finished-at="2025-11-21T18:48:31 IST" duration-ms="38" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
@@ -205,24 +232,40 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+=======
+        </test-method> <!-- AboutUs -->
+        <test-method is-config="true" signature="AMconfig()[pri:0, instance:TestScripts.AboutUsTest@72035809]" started-at="2025-11-21T20:28:59 IST" name="AMconfig" finished-at="2025-11-21T20:29:00 IST" duration-ms="1184" status="PASS">
+>>>>>>> branch 'master' of https://github.com/amol647/Selenium-Weekend-Batch.git
           <reporter-output>
             <line>
               <![CDATA[Logout]]>
             </line>
           </reporter-output>
         </test-method> <!-- AMconfig -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="ACconfig()[pri:0, instance:TestScripts.ClickOnFBTest@3b0090a4]" started-at="2025-11-21T18:48:31 IST" name="ACconfig" finished-at="2025-11-21T18:48:31 IST" duration-ms="0" status="SKIP">
+=======
+        <test-method is-config="true" signature="ACconfig()[pri:0, instance:TestScripts.AboutUsTest@72035809]" started-at="2025-11-21T20:29:00 IST" name="ACconfig" finished-at="2025-11-21T20:29:01 IST" duration-ms="526" status="PASS">
+>>>>>>> branch 'master' of https://github.com/amol647/Selenium-Weekend-Batch.git
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ACconfig -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="ATconfig()[pri:0, instance:TestScripts.ClickOnFBTest@3b0090a4]" started-at="2025-11-21T18:48:31 IST" name="ATconfig" finished-at="2025-11-21T18:48:31 IST" duration-ms="2" status="PASS">
+=======
+        <test-method is-config="true" signature="ATconfig()[pri:0, instance:TestScripts.AboutUsTest@72035809]" started-at="2025-11-21T20:29:01 IST" name="ATconfig" finished-at="2025-11-21T20:29:01 IST" duration-ms="1" status="PASS">
+>>>>>>> branch 'master' of https://github.com/amol647/Selenium-Weekend-Batch.git
           <reporter-output>
             <line>
               <![CDATA[Post condition]]>
             </line>
           </reporter-output>
         </test-method> <!-- ATconfig -->
+<<<<<<< HEAD
         <test-method is-config="true" signature="ASconfig()[pri:0, instance:TestScripts.ClickOnFBTest@3b0090a4]" started-at="2025-11-21T18:48:32 IST" name="ASconfig" finished-at="2025-11-21T18:48:32 IST" duration-ms="2" status="PASS">
+=======
+        <test-method is-config="true" signature="ASconfig()[pri:0, instance:TestScripts.AboutUsTest@72035809]" started-at="2025-11-21T20:29:01 IST" name="ASconfig" finished-at="2025-11-21T20:29:01 IST" duration-ms="1" status="PASS">
+>>>>>>> branch 'master' of https://github.com/amol647/Selenium-Weekend-Batch.git
           <reporter-output>
             <line>
               <![CDATA[Database Disconnect]]>
@@ -232,7 +275,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
             </line>
           </reporter-output>
         </test-method> <!-- ASconfig -->
-      </class> <!-- TestScripts.ClickOnFBTest -->
+      </class> <!-- TestScripts.AboutUsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
