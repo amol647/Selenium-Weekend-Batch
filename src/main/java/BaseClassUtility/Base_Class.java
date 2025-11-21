@@ -1,5 +1,8 @@
 package BaseClassUtility;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,6 +17,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import ObjectRepository.LoginPage;
+import ObjectRepository.LogoutPage;
 import ObjectRepository.PropertyFileUtility;
 
 public class Base_Class {
@@ -36,9 +40,9 @@ public class Base_Class {
 	public void BCconfig() throws Exception
 	{ 
 		ChromeOptions option = new ChromeOptions();
-		option.addArguments("--no-first-run");
-		option.addArguments("--no-default-browser-check");
-		option.addArguments("--homepage=about:blank");
+		Map<String, Object> prefs = new HashMap<>();
+		prefs.put("profile.password_manager_leak_detection", false);
+		option.setExperimentalOption("prefs", prefs);
 
 		
 		PropertyFileUtility putil = new PropertyFileUtility();
@@ -63,16 +67,18 @@ public class Base_Class {
 	}
 	
 	@AfterMethod
-	public void AMconfig()
+	public void AMconfig() throws InterruptedException
 	{
 		Reporter.log("Logout", true);
-		
+		LogoutPage lp = new LogoutPage(driver);
+		lp.logout();
 	}
 	
 	@AfterClass
 	public void ACconfig()
 	{
 		Reporter.log("Close the browser", true);
+		driver.quit();
 	}
 	
 	

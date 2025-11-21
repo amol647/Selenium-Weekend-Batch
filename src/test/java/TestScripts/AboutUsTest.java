@@ -8,7 +8,7 @@ import ObjectRepository.PropertyFileUtility;
 
 public class AboutUsTest {
 
-		@Test
+	@Test
 	public void AboutUs() {
 		
 		
