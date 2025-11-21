@@ -23,5 +23,7 @@ public class AboutUsTest extends Base_Class {
 		
 		about.getAboutUs().click();
 
+		driver.navigate().back();
+		
 	}
 }
