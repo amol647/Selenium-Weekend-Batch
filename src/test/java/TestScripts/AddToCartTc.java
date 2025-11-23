@@ -2,6 +2,8 @@ package TestScripts;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import BaseClassUtility.Base_Class;
@@ -12,7 +14,7 @@ import ObjectRepository.TakeScreenshotUtility;
 
 public class AddToCartTc extends Base_Class{
 		
-	@Test
+	@Test (groups = {"smoke", "regression"} )
 	public void AddToCart1() throws Exception
 	{
 		ExcelFileUtility eutil = new ExcelFileUtility();
@@ -46,8 +48,17 @@ public class AddToCartTc extends Base_Class{
 		//Click on Finish Button
 		checkout.getFinishBtn().click();
 		
+		
 //		TakeScreenshotUtility ts = new TakeScreenshotUtility();
 //		ts.TakeScreenshot();
+		
+		String expectedText = "Thank you for your order!";
+		
+		WebElement actual = driver.findElement(By.xpath("//h2[text()='Thank you for your order!']"));
+		
+		String actualText = actual.getText();
+		
+		Assert.assertEquals(actualText, expectedText, "Products not Ordered..!!");
 		
 		checkout.getBackToHomeBtn().click();
 	}

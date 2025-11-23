@@ -10,6 +10,7 @@ import org.openqa.selenium.io.FileHandler;
 
 public class TakeScreenshotUtility {
 
+	
 	public void TakeScreenshot() throws Exception
 	{
 		WebDriver driver=null;
@@ -18,7 +19,7 @@ public class TakeScreenshotUtility {
 		
 		File Temp = ts.getScreenshotAs(OutputType.FILE);
 		
-		File Dest = new File("./SS Utility");
+		File Dest = new File("./SS Utility/SS.png");
 		
 		FileHandler.copy(Temp, Dest);
 		

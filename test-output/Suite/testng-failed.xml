@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="TestScripts.AddToCartTc">
+        <methods>
+          <include name="ATconfig"/>
+          <include name="BCconfig"/>
+          <include name="BMconfig"/>
+          <include name="AddToCart1"/>
+          <include name="ASconfig"/>
+          <include name="AMconfig"/>
+          <include name="configBS"/>
+          <include name="ACconfig"/>
+          <include name="BTconfig"/>
+        </methods>
+      </class> <!-- TestScripts.AddToCartTc -->
+      <class name="TestScripts.AboutUsTest">
+        <methods>
+          <include name="ATconfig"/>
+          <include name="BCconfig"/>
+          <include name="BMconfig"/>
+          <include name="AMconfig"/>
+          <include name="ASconfig"/>
+          <include name="AboutUs"/>
+          <include name="configBS"/>
+          <include name="ACconfig"/>
+          <include name="BTconfig"/>
+        </methods>
+      </class> <!-- TestScripts.AboutUsTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

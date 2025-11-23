@@ -6,6 +6,8 @@ import java.util.Map;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -15,6 +17,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import ObjectRepository.LoginPage;
 import ObjectRepository.LogoutPage;
@@ -25,35 +28,59 @@ public class Base_Class {
 	public WebDriver driver;
 	public PropertyFileUtility putil;
 
-	@BeforeSuite
+	@BeforeSuite (groups = {"smoke", "regression"} )
 	public void configBS() {
 		Reporter.log("Database connection", true);
 	}
 	
-	@BeforeTest
+	@BeforeTest (groups = {"smoke", "regression"} )
 	public void BTconfig()
 	{
 		Reporter.log("Precondition if Any", true);
 	}
 	
-	@BeforeClass
+	@BeforeClass (groups = {"smoke", "regression"} )
 	public void BCconfig() throws Exception
 	{ 
+		
+//		@Parameters("Browser")	//Cross Browser Testing
+//		@BeforeClass (groups = {"smoke", "regression"} )
+//		public void BCconfig(String brow) throws Exception
+//		{ 
 		ChromeOptions option = new ChromeOptions();
 		Map<String, Object> prefs = new HashMap<>();
 		prefs.put("profile.password_manager_leak_detection", false);
 		option.setExperimentalOption("prefs", prefs);
-
 		
 		PropertyFileUtility putil = new PropertyFileUtility();
 		Reporter.log("Launch Browser", true);
 		driver = new ChromeDriver(option);
+
+//		driver=new FirefoxDriver();
+		
+//		String browser = brow;
+//		if(browser.equalsIgnoreCase("chrome"))
+//		{
+//			driver = new ChromeDriver(option);
+//		}
+//		else if(browser.equalsIgnoreCase("edge"))
+//		{
+//			driver = new EdgeDriver();
+//		}
+//		else if(browser.equalsIgnoreCase("firefox"))
+//		{
+//			driver = new FirefoxDriver();
+//		}
+//		else
+//		{
+//			driver = new ChromeDriver(option);
+//		}
 		driver.manage().window().maximize();
 		String url = putil.readDataFromPropertiesFile("url");
 		driver.get(url);
 	}
 	
-	@BeforeMethod
+	@BeforeMethod (groups = {"smoke", "regression"} )
 	public void BMconfig() throws Exception
 	{
 		PropertyFileUtility putil = new PropertyFileUtility();
@@ -66,7 +93,7 @@ public class Base_Class {
 		lp.getLoginbutton().click();
 	}
 	
-	@AfterMethod
+	@AfterMethod (groups = {"smoke", "regression"} )
 	public void AMconfig() throws InterruptedException
 	{
 		Reporter.log("Logout", true);
@@ -74,7 +101,7 @@ public class Base_Class {
 		lp.logout();
 	}
 	
-	@AfterClass
+	@AfterClass (groups = {"smoke", "regression"} )
 	public void ACconfig()
 	{
 		Reporter.log("Close the browser", true);
@@ -82,14 +109,14 @@ public class Base_Class {
 	}
 	
 	
-	@AfterTest
+	@AfterTest (groups = {"smoke", "regression"} )
 	public void ATconfig()
 	{
 		Reporter.log("Post condition", true);
 	}
 	
 	
-	@AfterSuite
+	@AfterSuite (groups = {"smoke", "regression"} )
 	public void ASconfig()
 	{
 		Reporter.log("Database Disconnect", true);
